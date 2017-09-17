@@ -79,8 +79,4 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  ENV['S3_KEY']='fill_in_your_key_here'
-  ENV['S3_SECRET']='fill_in_your_secret_key_here'
-  ENV['S3_BUCKET']='fill_in_your_bucket_name_here'
-
 end
