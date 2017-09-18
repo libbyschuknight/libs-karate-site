@@ -18,6 +18,7 @@ db/*.sqlite3-journal
 *.log
 tmp
 tmp/**/*
+.env
 
 # Documentation
 doc/api
@@ -90,4 +91,3 @@ capybara-*html
 
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
-
