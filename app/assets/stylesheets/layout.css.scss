@@ -29,8 +29,11 @@ header {
     font-size: 24px;
   }
   a {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
+  }
+  h1 a {
+    color: #FFF;
   }
   ul {
     position: absolute;
