@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Yeni Ekle Meaning
+            reorder: Tekrar sirala Meanings
+            reorder_done: Tekrar siralama tamamlandiMeanings
+          records:
+            title: Meanings
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Meanings yok henuz.  Tikla "Yeni Ekle Meaning" eklemek senin ilk meaning.
+          meaning:
+            view_live_html: Bunu canlu meaning goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle meaning
+            delete: Bunu Sil meaning sonsuza dek
+      meanings:
+        show:
+          other: Diger Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

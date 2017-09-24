@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+#        article: masculino/femenino
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Crear nuevo meaning
+            reorder: Reordenar meanings
+            reorder_done: Reordenación de meanings completada
+          records:
+            title: Meanings
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay meanings todavía. Pulsa en "Crear nuevo Meaning" para crear tu primer meaning.
+          meaning:
+            view_live_html: Ver este meaning como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este meaning
+            delete: Borrar este meaning para siempre
+      meanings:
+        show:
+          other: Otros meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

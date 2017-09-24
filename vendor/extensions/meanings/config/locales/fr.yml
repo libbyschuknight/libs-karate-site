@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Meaning
+            reorder: Réordonner les Meanings
+            reorder_done: Fin de réordonnancement des Meanings
+          records:
+            title: Meanings
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Meaning. Cliquer sur "Créer un(e) nouve(au/l/lle) Meaning" pour créer votre premi(er/ère) meaning.'
+          meaning:
+            view_live_html: Voir ce(t/tte) meaning <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) meaning
+            delete: Supprimer définitivement ce(t/tte) meaning
+      meanings:
+        show:
+          other: Autres Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

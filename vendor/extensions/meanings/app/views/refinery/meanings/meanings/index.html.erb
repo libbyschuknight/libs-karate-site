@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="meanings">
+    <% @meanings.each do |meaning| %>
+      <li>
+        <%= link_to meaning.japanese_name, refinery.meanings_meaning_path(meaning) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

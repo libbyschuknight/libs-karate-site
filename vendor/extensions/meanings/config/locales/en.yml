@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Add New Meaning
+            reorder: Reorder Meanings
+            reorder_done: Done Reordering Meanings
+          records:
+            title: Meanings
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Meanings yet. Click "Add New Meaning" to add your first meaning.
+          meaning:
+            view_live_html: View this meaning live <br/><em>(opens in a new window)</em>
+            edit: Edit this meaning
+            delete: Remove this meaning forever
+      meanings:
+        show:
+          other: Other Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

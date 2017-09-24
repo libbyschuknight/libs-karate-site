@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Pridať Meaning
+            reorder: Preusporiadať Meanings
+            reorder_done: Koniec radenia Meanings
+          records:
+            title: Meanings
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Meanings. Kliknite na "Pridať Meaning" pre pridanie prvého meaning.
+          meaning:
+            view_live_html: Zobraziť náhľad meaning<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť meaning
+            delete: Zmazať meaning
+      meanings:
+        show:
+          other: Daľšie Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

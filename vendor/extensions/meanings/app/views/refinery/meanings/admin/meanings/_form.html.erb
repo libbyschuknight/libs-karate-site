@@ -1,0 +1,35 @@
+<%= form_for [refinery, :meanings_admin, @meaning] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @meaning,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :japanese_name -%>
+    <%= f.text_field :japanese_name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :english_name -%>
+    <%= f.text_field :english_name -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "meanings/meaning" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.meanings.admin.meanings.meaning'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @meaning.japanese_name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

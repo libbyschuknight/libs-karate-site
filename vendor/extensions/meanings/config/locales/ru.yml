@@ -1,0 +1,29 @@
+ru:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Добавить Meaning
+            reorder: Изменить порядок Meanings
+            reorder_done: Закончить изменять порядок Meanings
+          records:
+            title: Meanings
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Meanings" не найдено. Нажмите "Добавить Meaning" чтобы создать meaning.
+          meaning:
+            view_live_html: Просмотреть meaning вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать meaning
+            delete: Удалить meaning навсегда
+      meanings:
+        show:
+          other: Другие Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
