@@ -1,0 +1,15 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(meaning) -%>">
+  <span class='title'>
+    <%= meaning.japanese_name %>
+  </span>
+
+  <span class='preview'></span>
+
+  <span class='actions'>
+    <%= action_icon(:preview, refinery.meanings_meaning_path(meaning), t('.view_live_html')) %>
+    <%= action_icon(:edit,    refinery.edit_meanings_admin_meaning_path(meaning), t('.edit') ) %>
+    <%= action_icon(:delete,  refinery.meanings_admin_meaning_path(meaning), t('.delete'),
+      { class: "cancel confirm-delete",
+        data: {confirm: t('message',  scope: 'refinery.admin.delete', title: meaning.japanese_name)}}  ) %>
+  </span>
+</li>

@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Aggiungi Nuovo Meaning
+            reorder: Riordina Meanings
+            reorder_done: Termina il Riordino di Meanings
+          records:
+            title: Meanings
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Meanings. Clicca "Aggiungi Nuovo Meaning" per aggiungere il tuo primo meaning.
+          meaning:
+            view_live_html: Guarda live questo meaning <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo meaning
+            delete: Rimuovi per sempre questo meaning
+      meanings:
+        show:
+          other: Altri Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

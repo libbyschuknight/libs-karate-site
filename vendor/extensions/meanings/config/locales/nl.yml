@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Nieuwe Meaning toevoegen
+            reorder: De volgorde van de Meanings wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Meaning-volgorde
+          records:
+            title: Meanings
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Meanings. Druk op 'Nieuwe Meaning toevoegen' om de eerste toe te voegen.
+          meaning:
+            view_live_html: Deze meaning op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze meaning
+            delete: Deze meaning definitief verwijderen
+      meanings:
+        show:
+          other: Andere Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

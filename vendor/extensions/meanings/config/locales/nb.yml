@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: Lag en ny Meaning
+            reorder: Endre rekkefølgen på Meanings
+            reorder_done: Ferdig å endre rekkefølgen Meanings
+          records:
+            title: Meanings
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Meanings enda. Klikk på "Lag en ny Meaning" for å legge til din første meaning.
+          meaning:
+            view_live_html: Vis hvordan denne meaning ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne meaning
+            delete: Fjern denne meaning permanent
+      meanings:
+        show:
+          other: Andre Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description

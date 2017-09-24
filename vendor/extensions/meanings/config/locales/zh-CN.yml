@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      meanings:
+        title: Meanings
+    meanings:
+      admin:
+        meanings:
+          actions:
+            create_new: 建立新的 Meaning
+            reorder: 对 Meanings 重新排序
+            reorder_done: 对 Meanings 的重新排序结束
+          records:
+            title: Meanings
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Meanings yet. Click "Add New Meaning" to add your first meaning.
+            no_items_yet: 目前没有 Meanings . 点击 "Add New Meaning" 创建一个meaning.
+          meaning:
+            view_live_html: 查看 meaning 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 meaning
+            delete: 永久删除 meaning
+      meanings:
+        show:
+          other: 其他 Meanings
+  activerecord:
+    attributes:
+      'refinery/meanings/meaning':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
