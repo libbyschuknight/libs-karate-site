@@ -1,28 +1,14 @@
-== README
+# Lib's Karate Site
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I have created this site for two reasons:
 
-Things you may want to cover:
+- to learn how to use RefineryCMS, building on my knowledge of Rails
+- to learn what I need to for my next couple of gradings in Seido Karate.
 
-* Ruby version
+I also hope to use it to learn a lot more tech stuff, like vanilla javascript and maybe a framework, improve my ability to right CSS, possibly look at using Foundation.
 
-* System dependencies
+I got started with this RefineryCMS app by following the guides - http://www.refinerycms.com/guides.
 
-* Configuration
+I originally started playing with the idea of a site like this by making a Rails app - https://github.com/libbyschuknight/libs_seido_guide. But very a number of reasons, including that I realised there was going to be a lot of content, I decided to start again with a Refinery CMS app.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+There are many things I want to do - issues for first attempt are here https://github.com/libbyschuknight/libs_seido_guide/issues.
