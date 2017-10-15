@@ -29,7 +29,8 @@ header {
     font-size: 24px;
   }
   a {
-    color: #FFF;
+    // color: #FFF;
+    color: red;
     text-decoration: none;
   }
   ul {
@@ -41,7 +42,8 @@ header {
     li {
       float: left;
       padding: 2px 10px;
-      border-right: solid 2px #6F6F6F;
+      // border-right: solid 2px #6F6F6F;
+      border-right: solid 2px yellow;
       &.last {
         border-right: none;
       }
