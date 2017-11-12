@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
 body {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: 'Lato', 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
 }
@@ -29,7 +32,7 @@ header {
     font-size: 24px;
   }
   a {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
   }
   ul {

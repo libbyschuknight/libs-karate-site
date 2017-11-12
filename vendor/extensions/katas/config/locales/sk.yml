@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Pridať Kata
+            reorder: Preusporiadať Katas
+            reorder_done: Koniec radenia Katas
+          records:
+            title: Katas
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Katas. Kliknite na "Pridať Kata" pre pridanie prvého kata.
+          kata:
+            view_live_html: Zobraziť náhľad kata<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť kata
+            delete: Zmazať kata
+      katas:
+        show:
+          other: Daľšie Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

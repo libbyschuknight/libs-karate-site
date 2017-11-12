@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Nieuwe Kata toevoegen
+            reorder: De volgorde van de Katas wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Kata-volgorde
+          records:
+            title: Katas
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Katas. Druk op 'Nieuwe Kata toevoegen' om de eerste toe te voegen.
+          kata:
+            view_live_html: Deze kata op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze kata
+            delete: Deze kata definitief verwijderen
+      katas:
+        show:
+          other: Andere Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

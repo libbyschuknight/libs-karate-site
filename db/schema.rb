@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170924023735) do
+ActiveRecord::Schema.define(version: 20171112010202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,6 +81,15 @@ ActiveRecord::Schema.define(version: 20170924023735) do
     t.datetime "updated_at"
     t.string   "image_title"
     t.string   "image_alt"
+  end
+
+  create_table "refinery_katas", force: :cascade do |t|
+    t.string   "title"
+    t.text     "meaning"
+    t.text     "interpretation"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "refinery_meanings", force: :cascade do |t|

@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Aggiungi Nuovo Kata
+            reorder: Riordina Katas
+            reorder_done: Termina il Riordino di Katas
+          records:
+            title: Katas
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Katas. Clicca "Aggiungi Nuovo Kata" per aggiungere il tuo primo kata.
+          kata:
+            view_live_html: Guarda live questo kata <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo kata
+            delete: Rimuovi per sempre questo kata
+      katas:
+        show:
+          other: Altri Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

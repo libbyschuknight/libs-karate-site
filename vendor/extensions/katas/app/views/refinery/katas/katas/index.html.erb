@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="katas">
+    <% @katas.each do |kata| %>
+      <li>
+        <%= link_to kata.title, refinery.katas_kata_path(kata) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
