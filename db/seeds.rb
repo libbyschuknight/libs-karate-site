@@ -11,3 +11,6 @@ Refinery::Pages::Engine.load_seed
 
 # Added by Refinery CMS Meanings extension
 Refinery::Meanings::Engine.load_seed
+
+# Added by Refinery CMS Katas extension
+Refinery::Katas::Engine.load_seed

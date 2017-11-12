@@ -66,3 +66,4 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 
 gem 'refinerycms-meanings', path: 'vendor/extensions'
+gem 'refinerycms-katas', path: 'vendor/extensions'

@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::Katas::Admin::KatasController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.katas_admin_katas_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_katas_admin_kata_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::Katas::Admin::KatasController.sortable? && ::Refinery::Katas::Kata.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.katas_admin_katas_path,
+                     t('.reorder', what:  "Katas"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.katas_admin_katas_path,
+                      t('.reorder_done', what: "Katas"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

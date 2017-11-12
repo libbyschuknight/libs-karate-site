@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+#        article: masculino/femenino
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Crear nuevo kata
+            reorder: Reordenar katas
+            reorder_done: Reordenación de katas completada
+          records:
+            title: Katas
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay katas todavía. Pulsa en "Crear nuevo Kata" para crear tu primer kata.
+          kata:
+            view_live_html: Ver este kata como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este kata
+            delete: Borrar este kata para siempre
+      katas:
+        show:
+          other: Otros katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

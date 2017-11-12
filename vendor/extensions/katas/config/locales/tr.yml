@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Yeni Ekle Kata
+            reorder: Tekrar sirala Katas
+            reorder_done: Tekrar siralama tamamlandiKatas
+          records:
+            title: Katas
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Katas yok henuz.  Tikla "Yeni Ekle Kata" eklemek senin ilk kata.
+          kata:
+            view_live_html: Bunu canlu kata goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle kata
+            delete: Bunu Sil kata sonsuza dek
+      katas:
+        show:
+          other: Diger Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

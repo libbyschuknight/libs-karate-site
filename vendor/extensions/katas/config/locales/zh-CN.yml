@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: 建立新的 Kata
+            reorder: 对 Katas 重新排序
+            reorder_done: 对 Katas 的重新排序结束
+          records:
+            title: Katas
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Katas yet. Click "Add New Kata" to add your first kata.
+            no_items_yet: 目前没有 Katas . 点击 "Add New Kata" 创建一个kata.
+          kata:
+            view_live_html: 查看 kata 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 kata
+            delete: 永久删除 kata
+      katas:
+        show:
+          other: 其他 Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

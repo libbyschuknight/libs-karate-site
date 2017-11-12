@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Kata
+            reorder: Réordonner les Katas
+            reorder_done: Fin de réordonnancement des Katas
+          records:
+            title: Katas
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Kata. Cliquer sur "Créer un(e) nouve(au/l/lle) Kata" pour créer votre premi(er/ère) kata.'
+          kata:
+            view_live_html: Voir ce(t/tte) kata <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) kata
+            delete: Supprimer définitivement ce(t/tte) kata
+      katas:
+        show:
+          other: Autres Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

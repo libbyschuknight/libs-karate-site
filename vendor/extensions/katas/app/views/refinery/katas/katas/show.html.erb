@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @kata.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @kata.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Meaning</h1>
+    <p>
+      <%=raw @kata.meaning %>
+    </p>
+  </section>
+  <section>
+    <h1>Interpretation</h1>
+    <p>
+      <%=raw @kata.interpretation %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="katas">
+      <% @katas.each do |kata| %>
+        <li>
+          <%= link_to kata.title, refinery.katas_kata_path(kata) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

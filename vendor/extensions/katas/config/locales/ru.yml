@@ -1,0 +1,29 @@
+ru:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Добавить Kata
+            reorder: Изменить порядок Katas
+            reorder_done: Закончить изменять порядок Katas
+          records:
+            title: Katas
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Katas" не найдено. Нажмите "Добавить Kata" чтобы создать kata.
+          kata:
+            view_live_html: Просмотреть kata вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать kata
+            delete: Удалить kata навсегда
+      katas:
+        show:
+          other: Другие Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation

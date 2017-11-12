@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      katas:
+        title: Katas
+    katas:
+      admin:
+        katas:
+          actions:
+            create_new: Lag en ny Kata
+            reorder: Endre rekkefølgen på Katas
+            reorder_done: Ferdig å endre rekkefølgen Katas
+          records:
+            title: Katas
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Katas enda. Klikk på "Lag en ny Kata" for å legge til din første kata.
+          kata:
+            view_live_html: Vis hvordan denne kata ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne kata
+            delete: Fjern denne kata permanent
+      katas:
+        show:
+          other: Andre Katas
+  activerecord:
+    attributes:
+      'refinery/katas/kata':
+        title: Title
+        meaning: Meaning
+        interpretation: Interpretation
