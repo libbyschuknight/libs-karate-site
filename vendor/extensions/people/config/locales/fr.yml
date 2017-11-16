@@ -1,0 +1,53 @@
+fr:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Grade
+            reorder: Réordonner les Grades
+            reorder_done: Fin de réordonnancement des Grades
+          records:
+            title: Grades
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Grade. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Grade" pour créer votre premi(er/ère) grade.
+          grade:
+            view_live_html: Voir ce(t/tte) grade <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) grade
+            delete: Supprimer définitivement ce(t/tte) grade
+        people:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Person
+            reorder: Réordonner les People
+            reorder_done: Fin de réordonnancement des People
+          records:
+            title: People
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Person. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Person" pour créer votre premi(er/ère) person.
+          person:
+            view_live_html: Voir ce(t/tte) person <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) person
+            delete: Supprimer définitivement ce(t/tte) person
+      grades:
+        show:
+          other: Autres Grades
+      people:
+        show:
+          other: Autres People
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

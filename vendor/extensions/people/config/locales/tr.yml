@@ -1,0 +1,55 @@
+tr:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Yeni Ekle Grade
+            reorder: Tekrar sirala Grades
+            reorder_done: Tekrar siralama tamamlandiGrades
+          records:
+            title: Grades
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Grades yok henuz.  Tikla "Yeni Ekle Grade"
+              eklemek senin ilk grade.
+          grade:
+            view_live_html: Bunu canlu grade goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle grade
+            delete: Bunu Sil grade sonsuza dek
+        people:
+          actions:
+            create_new: Yeni Ekle Person
+            reorder: Tekrar sirala People
+            reorder_done: Tekrar siralama tamamlandiPeople
+          records:
+            title: People
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir People yok henuz.  Tikla "Yeni Ekle Person"
+              eklemek senin ilk person.
+          person:
+            view_live_html: Bunu canlu person goruntule <br/><em>(yeni bir pencerede
+              acar)</em>
+            edit: Bunu Duzenle person
+            delete: Bunu Sil person sonsuza dek
+      grades:
+        show:
+          other: Diger Grades
+      people:
+        show:
+          other: Diger People
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

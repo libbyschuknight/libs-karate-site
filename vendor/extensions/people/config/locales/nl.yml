@@ -1,0 +1,55 @@
+nl:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Nieuwe Grade toevoegen
+            reorder: De volgorde van de Grades wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Grade-volgorde
+          records:
+            title: Grades
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Grades. Druk op 'Nieuwe Grade toevoegen'
+              om de eerste toe te voegen.
+          grade:
+            view_live_html: Deze grade op de website bekijken <br/><em>(opent in een
+              nieuw venster)</em>
+            edit: Bewerk deze grade
+            delete: Deze grade definitief verwijderen
+        people:
+          actions:
+            create_new: Nieuwe Person toevoegen
+            reorder: De volgorde van de People wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Person-volgorde
+          records:
+            title: People
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen People. Druk op 'Nieuwe Person toevoegen'
+              om de eerste toe te voegen.
+          person:
+            view_live_html: Deze person op de website bekijken <br/><em>(opent in
+              een nieuw venster)</em>
+            edit: Bewerk deze person
+            delete: Deze person definitief verwijderen
+      grades:
+        show:
+          other: Andere Grades
+      people:
+        show:
+          other: Andere People
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

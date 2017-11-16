@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::People::Admin::GradesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.people_admin_grades_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_people_admin_grade_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::People::Admin::GradesController.sortable? && ::Refinery::People::Grade.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.people_admin_grades_path,
+                     t('.reorder', what:  "Grades"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.people_admin_grades_path,
+                      t('.reorder_done', what: "Grades"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

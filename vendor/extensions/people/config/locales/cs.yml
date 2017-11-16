@@ -1,0 +1,53 @@
+cs:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Přidat Grade
+            reorder: Řadit Grades
+            reorder_done: Konec řazení Grades
+          records:
+            title: Grades
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Grades. Zvolte "Přidat Grade"
+              pro přidání prvního grade.
+          grade:
+            view_live_html: Zobrazit náhled grade<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit grade
+            delete: Smazat grade
+        people:
+          actions:
+            create_new: Přidat Person
+            reorder: Řadit People
+            reorder_done: Konec řazení People
+          records:
+            title: People
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné People. Zvolte "Přidat Person"
+              pro přidání prvního person.
+          person:
+            view_live_html: Zobrazit náhled person<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit person
+            delete: Smazat person
+      grades:
+        show:
+          other: Další Grades
+      people:
+        show:
+          other: Další People
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

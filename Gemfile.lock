@@ -7,6 +7,9 @@ PATH
     refinerycms-meanings (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 3.0.5)
+    refinerycms-people (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.5)
 
 GEM
   remote: https://rubygems.org/
@@ -316,6 +319,7 @@ DEPENDENCIES
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-katas!
   refinerycms-meanings!
+  refinerycms-people!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

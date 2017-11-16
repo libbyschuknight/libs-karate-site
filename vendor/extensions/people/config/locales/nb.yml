@@ -1,0 +1,55 @@
+nb:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Lag en ny Grade
+            reorder: Endre rekkefølgen på Grades
+            reorder_done: Ferdig å endre rekkefølgen Grades
+          records:
+            title: Grades
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Grades enda. Klikk på "Lag en ny Grade" for
+              å legge til din første grade.
+          grade:
+            view_live_html: Vis hvordan denne grade ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne grade
+            delete: Fjern denne grade permanent
+        people:
+          actions:
+            create_new: Lag en ny Person
+            reorder: Endre rekkefølgen på People
+            reorder_done: Ferdig å endre rekkefølgen People
+          records:
+            title: People
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen People enda. Klikk på "Lag en ny Person" for
+              å legge til din første person.
+          person:
+            view_live_html: Vis hvordan denne person ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne person
+            delete: Fjern denne person permanent
+      grades:
+        show:
+          other: Andre Grades
+      people:
+        show:
+          other: Andre People
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

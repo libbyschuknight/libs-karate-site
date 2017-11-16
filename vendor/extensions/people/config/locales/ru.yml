@@ -1,0 +1,53 @@
+ru:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Добавить Grade
+            reorder: Изменить порядок Grades
+            reorder_done: Закончить изменять порядок Grades
+          records:
+            title: Grades
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "Grades" не найдено. Нажмите "Добавить Grade" чтобы
+              создать grade.
+          grade:
+            view_live_html: Просмотреть grade вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать grade
+            delete: Удалить grade навсегда
+        people:
+          actions:
+            create_new: Добавить Person
+            reorder: Изменить порядок People
+            reorder_done: Закончить изменять порядок People
+          records:
+            title: People
+            sorry_no_results: Извините, поиск не дал результатов.
+            no_items_yet: Записей "People" не найдено. Нажмите "Добавить Person" чтобы
+              создать person.
+          person:
+            view_live_html: Просмотреть person вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать person
+            delete: Удалить person навсегда
+      grades:
+        show:
+          other: Другие Grades
+      people:
+        show:
+          other: Другие People
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::People::Admin::PeopleController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.people_admin_people_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_people_admin_person_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::People::Admin::PeopleController.sortable? && ::Refinery::People::Person.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.people_admin_people_path,
+                     t('.reorder', what:  "People"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.people_admin_people_path,
+                      t('.reorder_done', what: "People"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

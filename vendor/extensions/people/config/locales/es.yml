@@ -1,0 +1,55 @@
+es:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+      people:
+        title: People
+    people:
+      admin:
+        grades:
+          actions:
+            create_new: Crear nuevo grade
+            reorder: Reordenar grades
+            reorder_done: Reordenación de grades completada
+          records:
+            title: Grades
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay grades todavía. Pulsa en "Crear nuevo Grade" para
+              crear tu primer grade.
+          grade:
+            view_live_html: Ver este grade como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este grade
+            delete: Borrar este grade para siempre
+        people:
+          actions:
+            create_new: Crear nuevo person
+            reorder: Reordenar people
+            reorder_done: Reordenación de people completada
+          records:
+            title: People
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay people todavía. Pulsa en "Crear nuevo Person" para
+              crear tu primer person.
+          person:
+            view_live_html: Ver este person como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este person
+            delete: Borrar este person para siempre
+      grades:
+        show:
+          other: Otros grades
+      people:
+        show:
+          other: Otros people
+  activerecord:
+    attributes:
+      refinery/people/grade:
+        dan: Dan
+        level: Level
+      refinery/people/person:
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

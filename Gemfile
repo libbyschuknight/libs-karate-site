@@ -70,3 +70,5 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 
 gem 'refinerycms-meanings', path: 'vendor/extensions'
 gem 'refinerycms-katas', path: 'vendor/extensions'
+
+gem 'refinerycms-people', path: 'vendor/extensions'
