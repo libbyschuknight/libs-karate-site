@@ -12,3 +12,5 @@ I got started with this RefineryCMS app by following the guides - http://www.ref
 I originally started playing with the idea of a site like this by making a Rails app - https://github.com/libbyschuknight/libs_seido_guide. But very a number of reasons, including that I realised there was going to be a lot of content, I decided to start again with a Refinery CMS app.
 
 There are many things I want to do - issues for first attempt are here https://github.com/libbyschuknight/libs_seido_guide/issues.
+
+Using https://github.com/rroblak/seed_dump

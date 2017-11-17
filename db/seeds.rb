@@ -17,3 +17,6 @@ Refinery::Katas::Engine.load_seed
 
 # Added by Refinery CMS People extension
 Refinery::People::Engine.load_seed
+
+
+Dir[File.join(Refinery::Core::Engine.root, 'db', 'seeds', '*.rb')].sort.each { |seed| load seed }
