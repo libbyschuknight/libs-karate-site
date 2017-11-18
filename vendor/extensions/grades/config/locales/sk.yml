@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Pridať Grade
+            reorder: Preusporiadať Grades
+            reorder_done: Koniec radenia Grades
+          records:
+            title: Grades
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Grades. Kliknite na "Pridať Grade" pre pridanie prvého grade.
+          grade:
+            view_live_html: Zobraziť náhľad grade<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť grade
+            delete: Zmazať grade
+      grades:
+        show:
+          other: Daľšie Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

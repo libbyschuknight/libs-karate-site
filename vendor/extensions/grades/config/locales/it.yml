@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Aggiungi Nuovo Grade
+            reorder: Riordina Grades
+            reorder_done: Termina il Riordino di Grades
+          records:
+            title: Grades
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Grades. Clicca "Aggiungi Nuovo Grade" per aggiungere il tuo primo grade.
+          grade:
+            view_live_html: Guarda live questo grade <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo grade
+            delete: Rimuovi per sempre questo grade
+      grades:
+        show:
+          other: Altri Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Добавить Grade
+            reorder: Изменить порядок Grades
+            reorder_done: Закончить изменять порядок Grades
+          records:
+            title: Grades
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Grades" не найдено. Нажмите "Добавить Grade" чтобы создать grade.
+          grade:
+            view_live_html: Просмотреть grade вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать grade
+            delete: Удалить grade навсегда
+      grades:
+        show:
+          other: Другие Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

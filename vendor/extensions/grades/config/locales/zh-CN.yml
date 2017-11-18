@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: 建立新的 Grade
+            reorder: 对 Grades 重新排序
+            reorder_done: 对 Grades 的重新排序结束
+          records:
+            title: Grades
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Grades yet. Click "Add New Grade" to add your first grade.
+            no_items_yet: 目前没有 Grades . 点击 "Add New Grade" 创建一个grade.
+          grade:
+            view_live_html: 查看 grade 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 grade
+            delete: 永久删除 grade
+      grades:
+        show:
+          other: 其他 Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

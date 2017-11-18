@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Yeni Ekle Grade
+            reorder: Tekrar sirala Grades
+            reorder_done: Tekrar siralama tamamlandiGrades
+          records:
+            title: Grades
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Grades yok henuz.  Tikla "Yeni Ekle Grade" eklemek senin ilk grade.
+          grade:
+            view_live_html: Bunu canlu grade goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle grade
+            delete: Bunu Sil grade sonsuza dek
+      grades:
+        show:
+          other: Diger Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

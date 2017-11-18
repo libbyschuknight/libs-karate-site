@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Nieuwe Grade toevoegen
+            reorder: De volgorde van de Grades wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Grade-volgorde
+          records:
+            title: Grades
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Grades. Druk op 'Nieuwe Grade toevoegen' om de eerste toe te voegen.
+          grade:
+            view_live_html: Deze grade op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze grade
+            delete: Deze grade definitief verwijderen
+      grades:
+        show:
+          other: Andere Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level
