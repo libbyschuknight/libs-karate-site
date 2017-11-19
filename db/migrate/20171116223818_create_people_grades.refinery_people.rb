@@ -6,6 +6,8 @@ class CreatePeopleGrades < ActiveRecord::Migration
       t.boolean :dan
       t.integer :level
       t.integer :position
+      t.string :title
+      t.boolean :kyu
 
       t.timestamps
     end
