@@ -46,6 +46,17 @@ Refinery::Page.where(slug: "about").first.parts.where(slug: "body").first.update
   body: "<p class=\"image-align-right\"></p>\r\n<p>Hi, I'm Libby.</p>\r\n<img src=\"http://localhost:3000/system/images/W1siZiIsIjIwMTcvMDkvMjQvMnNjZG9ueWUxa19tZV9vbmxpbmUuanBnIl0sWyJwIiwidGh1bWIiLCIyMjV4MjU1XHUwMDNlIl1d/me%20online.jpg?sha=91fea3a7e79825c6\" title=\"Me Online\" alt=\"Me Online\" data-rel=\"225x255\" width=\"225\" height=\"225\" class=\"image-align-right selected_by_wym\" /><p>I have created this site for two reasons:</p>\r\n<ol><li>to learn how to use RefineryCMS, building on my knowledge of Rails</li>\r\n<li>to learn what I need to for my next couple of gradings in <a href=\"http://seidowellington.co.nz/\" title=\"http://seidowellington.co.nz/\">Seido Karat</a>e.</li>\r\n</ol>I also hope to use it to learn a lot more tech stuff, like vanilla javascript and maybe a framework, improve my ability to right CSS, possibly look at using Foundation. <p>I got started with this RefineryCMS app by following the guides - <a href=\"http://www.refinerycms.com/guides\" title=\"http://www.refinerycms.com/guides\" target=\"_blank\">http://www.refinerycms.com/guides</a>.</p>\r\n<p>To see the code please go to <a href=\"https://github.com/libbyschuknight/libs-karate-site\" title=\"https://github.com/libbyschuknight/libs-karate-site\" target=\"_blank\">https://github.com/libbyschuknight/libs-karate-site</a>\r\n</p>"
 )
 
+# rake db:seed:dump FILE=db/seed_content.rb APPEND=true MODELS=Refinery::Grades::Grade
+Refinery::Grades::Grade.create!([
+  {title: "Shodan", dan: true, kyu: false, level: 1, position: nil},
+  {title: "Nidan", dan: true, kyu: false, level: 2, position: nil},
+  {title: "Sandan", dan: true, kyu: false, level: 3, position: nil},
+  {title: "Sensei", dan: true, kyu: false, level: 4, position: nil},
+  {title: "Kyoshi", dan: true, kyu: false, level: 5, position: nil},
+  {title: "Jun Shihan", dan: true, kyu: false, level: 6, position: nil},
+  {title: "Sei Shihan", dan: true, kyu: false, level: 6, position: nil}
+])
+
 # rake db:seed:dump FILE=db/seed_content.rb APPEND=true MODELS=Refinery::People::Person
 Refinery::People::Person.create!([
   {first_name: "Ben", last_name: "Otang", photo_id: 6, dojo: "Wellington", position: nil, grade_id: 7},
@@ -58,17 +69,6 @@ Refinery::People::Person.create!([
   {first_name: "Bruce", last_name: "??", photo_id: 6, dojo: "Wellington", position: nil, grade_id: 4},
   {first_name: "Julie", last_name: "Herron", photo_id: 6, dojo: "Wellington", position: nil, grade_id: 4},
   {first_name: "Garry", last_name: "??", photo_id: 6, dojo: "Wellington", position: nil, grade_id: 4}
-])
-
-# rake db:seed:dump FILE=db/seed_content.rb APPEND=true MODELS=Refinery::Grades::Grade
-Refinery::Grades::Grade.create!([
-  {title: "Shodan", dan: true, kyu: false, level: 1, position: nil},
-  {title: "Nidan", dan: true, kyu: false, level: 2, position: nil},
-  {title: "Sandan", dan: true, kyu: false, level: 3, position: nil},
-  {title: "Sensei", dan: true, kyu: false, level: 4, position: nil},
-  {title: "Kyoshi", dan: true, kyu: false, level: 5, position: nil},
-  {title: "Jun Shihan", dan: true, kyu: false, level: 6, position: nil},
-  {title: "Sei Shihan", dan: true, kyu: false, level: 6, position: nil}
 ])
 
 
