@@ -181,6 +181,7 @@ ActiveRecord::Schema.define(version: 20171118045453) do
     t.integer  "photo_id"
     t.string   "dojo"
     t.integer  "position"
+    t.integer  "grade_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

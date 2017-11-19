@@ -51,6 +51,8 @@ Refinery::Meanings::Meaning.create!([
 #   {dan: true, level: 5, position: nil, title: "Kyoshi", kyu: false}
 # ])
 
+
+
 # rake db:seed:dump FILE=db/seed_content.rb APPEND=true MODELS=Refinery::PagePart
 
 # Refinery::PagePart.create!([

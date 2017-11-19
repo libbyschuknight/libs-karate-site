@@ -8,6 +8,7 @@ class CreatePeoplePeople < ActiveRecord::Migration
       t.integer :photo_id
       t.string :dojo
       t.integer :position
+      t.belongs_to :grade
 
       t.timestamps
     end
