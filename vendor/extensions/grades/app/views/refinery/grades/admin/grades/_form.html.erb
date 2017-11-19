@@ -1,0 +1,30 @@
+<%= form_for [refinery, :grades_admin, @grade] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @grade,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :dan -%>
+    <%= f.check_box :dan, :checked => @grade[:dan] -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :kyu -%>
+    <%= f.check_box :kyu, :checked => @grade[:kyu] -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :level -%>
+    <%= f.number_field :level -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.grades.admin.grades.grade'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @grade.title) -%>
+<% end -%>

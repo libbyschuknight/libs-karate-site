@@ -40,6 +40,7 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
 end
@@ -47,6 +48,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  gem 'seed_dump'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -67,3 +70,5 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 
 gem 'refinerycms-meanings', path: 'vendor/extensions'
 gem 'refinerycms-katas', path: 'vendor/extensions'
+gem 'refinerycms-people', path: 'vendor/extensions'
+gem 'refinerycms-grades', path: 'vendor/extensions'

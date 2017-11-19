@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      people:
+        title: People
+    people:
+      admin:
+        people:
+          actions:
+            create_new: Добавить Person
+            reorder: Изменить порядок People
+            reorder_done: Закончить изменять порядок People
+          records:
+            title: People
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "People" не найдено. Нажмите "Добавить Person" чтобы создать person.
+          person:
+            view_live_html: Просмотреть person вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать person
+            delete: Удалить person навсегда
+      people:
+        show:
+          other: Другие People
+  activerecord:
+    attributes:
+      'refinery/people/person':
+        first_name: First Name
+        last_name: Last Name
+        photo: Photo
+        dojo: Dojo

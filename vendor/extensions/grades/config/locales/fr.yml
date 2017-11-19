@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Grade
+            reorder: Réordonner les Grades
+            reorder_done: Fin de réordonnancement des Grades
+          records:
+            title: Grades
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Grade. Cliquer sur "Créer un(e) nouve(au/l/lle) Grade" pour créer votre premi(er/ère) grade.'
+          grade:
+            view_live_html: Voir ce(t/tte) grade <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) grade
+            delete: Supprimer définitivement ce(t/tte) grade
+      grades:
+        show:
+          other: Autres Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

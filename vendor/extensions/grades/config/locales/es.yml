@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+#        article: masculino/femenino
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Crear nuevo grade
+            reorder: Reordenar grades
+            reorder_done: Reordenación de grades completada
+          records:
+            title: Grades
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay grades todavía. Pulsa en "Crear nuevo Grade" para crear tu primer grade.
+          grade:
+            view_live_html: Ver este grade como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este grade
+            delete: Borrar este grade para siempre
+      grades:
+        show:
+          other: Otros grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

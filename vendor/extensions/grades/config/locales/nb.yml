@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      grades:
+        title: Grades
+    grades:
+      admin:
+        grades:
+          actions:
+            create_new: Lag en ny Grade
+            reorder: Endre rekkefølgen på Grades
+            reorder_done: Ferdig å endre rekkefølgen Grades
+          records:
+            title: Grades
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Grades enda. Klikk på "Lag en ny Grade" for å legge til din første grade.
+          grade:
+            view_live_html: Vis hvordan denne grade ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne grade
+            delete: Fjern denne grade permanent
+      grades:
+        show:
+          other: Andre Grades
+  activerecord:
+    attributes:
+      'refinery/grades/grade':
+        title: Title
+        dan: Dan
+        kyu: Kyu
+        level: Level

@@ -14,3 +14,9 @@ Refinery::Meanings::Engine.load_seed
 
 # Added by Refinery CMS Katas extension
 Refinery::Katas::Engine.load_seed
+
+# Added by Refinery CMS People extension
+Refinery::People::Engine.load_seed
+
+# Added by Refinery CMS Grades extension
+Refinery::Grades::Engine.load_seed
