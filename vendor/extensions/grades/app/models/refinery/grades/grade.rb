@@ -11,6 +11,9 @@ module Refinery
       #
       #   acts_as_indexed :fields => [:title]
 
+      def senpai?
+        level == 1 || level == 2 || level == 3
+      end
     end
   end
 end

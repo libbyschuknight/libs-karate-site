@@ -1,11 +1,21 @@
 <% content_for :body do %>
-  <ul id="people">
-    <% @people.each do |person| %>
-      <li>
-        <%= link_to person.first_name, refinery.people_person_path(person) %>
-      </li>
-    <% end %>
-  </ul>
+  <div id="people">
+     <div>
+       <% @people.each do |person| %>
+         <%= link_to refinery.people_person_path(person) do %>
+             <figure>
+               <%= image_fu person.photo, "250x250" %>
+               <figcaption>
+                 <%= title(person)%> <%= person.first_name %>
+                 <p class="p">
+                   <%= person.dojo %>
+                 </p>
+               </figcaption>
+             </figure>
+         <% end %>
+       <% end %>
+     </div>
+   </div>
 <% end %>
 
 <%= render '/refinery/content_page' %>

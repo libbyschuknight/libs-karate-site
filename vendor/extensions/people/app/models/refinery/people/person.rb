@@ -14,6 +14,9 @@ module Refinery
       #
       #   acts_as_indexed :fields => [:title]
 
+      def senpai_title
+        "Senpai" if grade.senpai?
+      end
     end
   end
 end
