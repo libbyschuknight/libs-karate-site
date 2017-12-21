@@ -34,14 +34,25 @@
 
 # Update home page
 
-Refinery::Page.where(slug: "home").first.parts.where(slug: "side_body").first.destroy
+if Refinery::Page.where(slug: "home").first.parts.where(slug: "side_body").first
+  Refinery::Page.where(slug: "home").first.parts.where(slug: "side_body").first.destroy
+end
+
 Refinery::Page.where(slug: "home").first.parts.where(slug: "body").first.update(
   body: "<p>I will be using this site to help me learn all I need to for my next lot of gradings in Seido Karate.</p>\r\n<p>As well as learn about using Refinery CMS and Rails!</p>\r\n<p>I train at Seido Karate Wellington.</p>\r\n<p>Let the adventure being!</p>\r\n<img src=\"http://localhost:3000/system/images/W1siZiIsIjIwMTcvMDkvMjQvNmkzdHY0cGh1cV9icm93bl9iZWx0LmpwZyJdLFsicCIsInRodW1iIiwiNDUweDQ1MFx1MDAzZSJdXQ/brown%20belt.jpg?sha=c3bd4a48aac296c4\" title=\"Brown Belt\" alt=\"Brown Belt\" data-rel=\"450x450\" width=\"338\" height=\"450\" class=\"image-align-right selected_by_wym\" />\r\n<p><img src=\"/system/images/W1siZiIsIjIwMTcvMDkvMjQvOGxvODIwbzFmNF9zZWlkb19sb2dvLnBuZyJdLFsicCIsInRodW1iIiwiNDUweDQ1MFx1MDAzZSJdXQ/seido-logo.png?sha=f03cd80786390b35\" title=\"Seido Logo\" alt=\"Seido Logo\" data-rel=\"450x450\" width=\"212\" height=\"192\" /></p>"
 )
 
+
+
+## TODO: check and deal with duplication
+# may only be useful for a clean seed
+
 # Update about page
 
-Refinery::Page.where(slug: "about").first.parts.where(slug: "side_body").first.destroy
+if Refinery::Page.where(slug: "about").first.parts.where(slug: "side_body").first
+  Refinery::Page.where(slug: "about").first.parts.where(slug: "side_body").first.destroy
+end
+
 Refinery::Page.where(slug: "about").first.parts.where(slug: "body").first.update(
   body: "<p class=\"image-align-right\"></p>\r\n<p>Hi, I'm Libby.</p>\r\n<img src=\"http://localhost:3000/system/images/W1siZiIsIjIwMTcvMDkvMjQvMnNjZG9ueWUxa19tZV9vbmxpbmUuanBnIl0sWyJwIiwidGh1bWIiLCIyMjV4MjU1XHUwMDNlIl1d/me%20online.jpg?sha=91fea3a7e79825c6\" title=\"Me Online\" alt=\"Me Online\" data-rel=\"225x255\" width=\"225\" height=\"225\" class=\"image-align-right selected_by_wym\" /><p>I have created this site for two reasons:</p>\r\n<ol><li>to learn how to use RefineryCMS, building on my knowledge of Rails</li>\r\n<li>to learn what I need to for my next couple of gradings in <a href=\"http://seidowellington.co.nz/\" title=\"http://seidowellington.co.nz/\">Seido Karat</a>e.</li>\r\n</ol>I also hope to use it to learn a lot more tech stuff, like vanilla javascript and maybe a framework, improve my ability to right CSS, possibly look at using Foundation. <p>I got started with this RefineryCMS app by following the guides - <a href=\"http://www.refinerycms.com/guides\" title=\"http://www.refinerycms.com/guides\" target=\"_blank\">http://www.refinerycms.com/guides</a>.</p>\r\n<p>To see the code please go to <a href=\"https://github.com/libbyschuknight/libs-karate-site\" title=\"https://github.com/libbyschuknight/libs-karate-site\" target=\"_blank\">https://github.com/libbyschuknight/libs-karate-site</a>\r\n</p>"
 )
