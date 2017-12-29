@@ -3,6 +3,7 @@ module Refinery
     class Kata < Refinery::Core::BaseModel
       self.table_name = 'refinery_katas'
 
+      has_and_belongs_to_many :stances, class_name: Refinery::Stances::Stance
 
       validates :title, :presence => true, :uniqueness => true
 

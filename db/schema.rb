@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171229005324) do
+ActiveRecord::Schema.define(version: 20171229020044) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,7 +100,10 @@ ActiveRecord::Schema.define(version: 20171229005324) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "stance_id"
   end
+
+  add_index "refinery_katas", ["stance_id"], name: "index_refinery_katas_on_stance_id", using: :btree
 
   create_table "refinery_meanings", force: :cascade do |t|
     t.string   "japanese_name"
@@ -215,7 +218,10 @@ ActiveRecord::Schema.define(version: 20171229005324) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "kata_id"
   end
+
+  add_index "refinery_stances", ["kata_id"], name: "index_refinery_stances_on_kata_id", using: :btree
 
   create_table "seo_meta", force: :cascade do |t|
     t.integer  "seo_meta_id"
