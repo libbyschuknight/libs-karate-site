@@ -20,3 +20,6 @@ Refinery::People::Engine.load_seed
 
 # Added by Refinery CMS Grades extension
 Refinery::Grades::Engine.load_seed
+
+# Added by Refinery CMS Stances extension
+Refinery::Stances::Engine.load_seed

@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Nieuwe Stance toevoegen
+            reorder: De volgorde van de Stances wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Stance-volgorde
+          records:
+            title: Stances
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Stances. Druk op 'Nieuwe Stance toevoegen' om de eerste toe te voegen.
+          stance:
+            view_live_html: Deze stance op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze stance
+            delete: Deze stance definitief verwijderen
+      stances:
+        show:
+          other: Andere Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

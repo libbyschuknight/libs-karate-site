@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="stances">
+    <% @stances.each do |stance| %>
+      <li>
+        <%= link_to stance.japanese_name, refinery.stances_stance_path(stance) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

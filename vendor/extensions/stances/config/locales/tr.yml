@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Yeni Ekle Stance
+            reorder: Tekrar sirala Stances
+            reorder_done: Tekrar siralama tamamlandiStances
+          records:
+            title: Stances
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Stances yok henuz.  Tikla "Yeni Ekle Stance" eklemek senin ilk stance.
+          stance:
+            view_live_html: Bunu canlu stance goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle stance
+            delete: Bunu Sil stance sonsuza dek
+      stances:
+        show:
+          other: Diger Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

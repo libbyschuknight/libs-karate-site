@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: 建立新的 Stance
+            reorder: 对 Stances 重新排序
+            reorder_done: 对 Stances 的重新排序结束
+          records:
+            title: Stances
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Stances yet. Click "Add New Stance" to add your first stance.
+            no_items_yet: 目前没有 Stances . 点击 "Add New Stance" 创建一个stance.
+          stance:
+            view_live_html: 查看 stance 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 stance
+            delete: 永久删除 stance
+      stances:
+        show:
+          other: 其他 Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

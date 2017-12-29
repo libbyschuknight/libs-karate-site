@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Přidat Stance
+            reorder: Řadit Stances
+            reorder_done: Konec řazení Stances
+          records:
+            title: Stances
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Stances. Zvolte "Přidat Stance" pro přidání prvního stance.
+          stance:
+            view_live_html: Zobrazit náhled stance<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit stance
+            delete: Smazat stance
+      stances:
+        show:
+          other: Další Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

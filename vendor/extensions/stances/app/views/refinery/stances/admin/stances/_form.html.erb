@@ -1,0 +1,44 @@
+<%= form_for [refinery, :stances_admin, @stance] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @stance,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :japanese_name -%>
+    <%= f.text_field :japanese_name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :english_name -%>
+    <%= f.text_field :english_name -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "stances/stance" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @stance.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.stances.admin.stances.stance'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @stance.japanese_name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

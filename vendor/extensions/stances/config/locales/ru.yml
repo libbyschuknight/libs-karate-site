@@ -1,0 +1,30 @@
+ru:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Добавить Stance
+            reorder: Изменить порядок Stances
+            reorder_done: Закончить изменять порядок Stances
+          records:
+            title: Stances
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Stances" не найдено. Нажмите "Добавить Stance" чтобы создать stance.
+          stance:
+            view_live_html: Просмотреть stance вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать stance
+            delete: Удалить stance навсегда
+      stances:
+        show:
+          other: Другие Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Aggiungi Nuovo Stance
+            reorder: Riordina Stances
+            reorder_done: Termina il Riordino di Stances
+          records:
+            title: Stances
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Stances. Clicca "Aggiungi Nuovo Stance" per aggiungere il tuo primo stance.
+          stance:
+            view_live_html: Guarda live questo stance <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo stance
+            delete: Rimuovi per sempre questo stance
+      stances:
+        show:
+          other: Altri Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

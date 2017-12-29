@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+#        article: masculino/femenino
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Crear nuevo stance
+            reorder: Reordenar stances
+            reorder_done: Reordenación de stances completada
+          records:
+            title: Stances
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay stances todavía. Pulsa en "Crear nuevo Stance" para crear tu primer stance.
+          stance:
+            view_live_html: Ver este stance como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este stance
+            delete: Borrar este stance para siempre
+      stances:
+        show:
+          other: Otros stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

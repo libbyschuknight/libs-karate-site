@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Stance
+            reorder: Réordonner les Stances
+            reorder_done: Fin de réordonnancement des Stances
+          records:
+            title: Stances
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Stance. Cliquer sur "Créer un(e) nouve(au/l/lle) Stance" pour créer votre premi(er/ère) stance.'
+          stance:
+            view_live_html: Voir ce(t/tte) stance <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) stance
+            delete: Supprimer définitivement ce(t/tte) stance
+      stances:
+        show:
+          other: Autres Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo

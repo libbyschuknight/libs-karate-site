@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      stances:
+        title: Stances
+    stances:
+      admin:
+        stances:
+          actions:
+            create_new: Lag en ny Stance
+            reorder: Endre rekkefølgen på Stances
+            reorder_done: Ferdig å endre rekkefølgen Stances
+          records:
+            title: Stances
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Stances enda. Klikk på "Lag en ny Stance" for å legge til din første stance.
+          stance:
+            view_live_html: Vis hvordan denne stance ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne stance
+            delete: Fjern denne stance permanent
+      stances:
+        show:
+          other: Andre Stances
+  activerecord:
+    attributes:
+      'refinery/stances/stance':
+        japanese_name: Japanese Name
+        english_name: English Name
+        description: Description
+        photo: Photo
