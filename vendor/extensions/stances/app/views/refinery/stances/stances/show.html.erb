@@ -27,6 +27,20 @@
       <%= image_fu @stance.photo, nil %>
     </p>
   </section>
+
+  <% content_for :side_body do %>
+    <aside>
+      <h2>Katas</h2>
+      <ul>
+        <% @stance.katas.each do |kata| %>
+          <li>
+            <%= link_to kata.title, refinery.katas_kata_path(kata) %>
+          </li>
+        <% end %>
+      </ul>
+    </aside>
+  <% end %>
+
 <% end %>
 
 <% content_for :side_body do %>

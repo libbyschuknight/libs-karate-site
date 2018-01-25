@@ -21,6 +21,19 @@
       <%=raw @kata.interpretation %>
     </p>
   </section>
+
+  <% content_for :side_body do %>
+    <aside>
+      <h2>Stances</h2>
+      <ul id="katas">
+        <% @kata.stances.each do |stance| %>
+          <li>
+            <%= link_to stance.japanese_name, refinery.stances_stance_path(stance) %>
+          </li>
+        <% end %>
+      </ul>
+    </aside>
+  <% end %>
 <% end %>
 
 <% content_for :side_body do %>
