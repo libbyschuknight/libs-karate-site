@@ -1,3 +1,11 @@
+# If need to set up from scratch
+#   rake db:drop
+#   rake db:create
+#   rake db:migrate
+#   rake db:seed
+#   rake db:seed_content
+
+
 # Extensions Seed Data
 
 # Seed Dump - https://github.com/rroblak/seed_dump
