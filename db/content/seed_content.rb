@@ -111,3 +111,10 @@ Refinery::Meanings::Meaning.create!([
 Refinery::Stances::Stance.create!([
   {japanese_name: "Zenkutsu Dachi", english_name: "Front learning Stance", description: "<p>70 front, 30 back, shoulder width apart, front leg, knee bent over ankle, back leg straight, foot at 45deg, length about 2 shoulder widths.</p>", photo_id: 5, position: nil}
 ])
+
+
+# Seed katas_stances
+# rake db:seed:dump FILE=db/content/seed_content.rb APPEND=true MODELS=KatasStance
+KatasStance.create!([
+  {kata_id: 1, stance_id: 1}
+])
