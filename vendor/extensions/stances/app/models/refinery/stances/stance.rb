@@ -3,6 +3,8 @@ module Refinery
     class Stance < Refinery::Core::BaseModel
       self.table_name = 'refinery_stances'
 
+      has_many :katas_stances
+      has_many :katas, :through => :katas_stances, :class_name => Refinery::Katas::Kata
 
       validates :japanese_name, :presence => true, :uniqueness => true
 
