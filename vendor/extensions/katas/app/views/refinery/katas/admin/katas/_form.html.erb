@@ -15,11 +15,51 @@
                 :object => "katas/kata" -%>
   </div>
 
+  <!-- <div class="field">
+    <% @kata.stances.each do |stance| %>
+      <% stance.japanese_name %>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <% @stances.each do |stance| %>
+      <% check_box_tag "stance_ids[]", stance.id %>
+      <% stance.japanese_name %>
+    <% end %>
+  </div> -->
+
+
+    <% KatasStance.all.each do |ks| -%>
+      <div>
+        <% check_box_tag :ks_ids, ks.id, @kata.katas_stances.include?(ks), :name => 'kata[ks_ids][]' -%>
+        <% label_tag :ks_ids, ks.stance.japanese_name -%>
+      </div>
+    <% end -%>
+    <!-- <% submit_tag -%> -->
+
+    <hr>
+
+    <% @stances.each do |stance| -%>
+        <%= stance.japanese_name %>
+        <div>
+            <% stance.katas_stances.each do |ks| %>
+              <%= check_box_tag :stance_ids, stance.id, @kata.katas_stances.include?(ks), :name => 'kata[stance_ids][]' -%>
+              <%= label_tag :stance_ids, stance.japanese_name -%>
+            <% end %>
+        </div>
+    <% end -%>
+
+    <%= collection_check_boxes(:kata, :id, KatasStance.all, :id, :id) %>
+
+
+
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.katas.admin.katas.kata'),
              :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @kata.title) -%>
 <% end -%>
+
 
 <% content_for :javascripts do -%>
   <script>
